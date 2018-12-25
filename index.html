@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+  <meta charset="utf-8" />
+  <title translate-key="title">Ателье "Танюша"</title>
+  <meta translate-key="meta-description" name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="style/normalize.css" rel="stylesheet" />
+  <link href="style/main.css" rel="stylesheet" />
+  <script src="lang/dict.json"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body class="main">
+  <header class="header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a translate-key="main-menu-1" href="#about">Об ателье</a>
+          </li>
+          <li>
+            <a translate-key="main-menu-2" href="#services">Услуги</a>
+          </li>
+          <li>
+            <a translate-key="main-menu-3" href="#review">Отзывы</a>
+          </li>
+          <li>
+            <a translate-key="main-menu-4" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-info">
+        <img src="img/main-logo.svg" alt="logo" width="255px" />
+        <h1 translate-key="main-headline">"Танюша"</h1>
+        <p translate-key="main-description" class="teaser">Ателье “Танюша” занимается пошивом/вязанием(?) и ремонтом женского, мужского и детского трикотажа.
+        </p>
+        <button id="call-button" translate-key="call-to-action" type="button">позвонить в ателье</button>
+      </div>
+
+      <aside class="usefull-info">
+        <ul>
+          <li>
+            <img src="img/pin.svg" alt="location icon" />
+            <span translate-key="city">Черкассы</span>
+          </li>
+          <li class="lang">
+            <a class="checked" href="#">RU</a>|
+            <a href="#">UA</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <div class="content">
+    <section class="about-company container">
+      <div class="info">
+        <h2 translate-key="headline-about"><a name="about">Об ателье</a></h2>
+        <p translate-key="description-about">
+          Ателье “Танюша” было основано в 20ХХ году, и уже на протяжении Х лет радует своих клиентов качественными вещами. Для изготовления трикотажных изделий мы используем только качественные нити из Италии и (???), все производство выполняется на современном
+          оборудовании.
+          </br>
+          Ателье “Танюша” берется как за индивидуальные заказы, так и за производство форменной одежды.
+        </p>
+      </div>
+      <img src="img/sweaters.jpg" alt="стопка свитеров" />
+      <img class="tool-yarn" src="img/tool2.jpg" />
+      <img class="tool-pin" src="img/tool8.jpg" />
+    </section>
+
+    <section class="services container">
+      <h2 translate-key="headline-services"><a name="services">Услуги нашего ателье</a></h2>
+      <div class="service">
+        <img src="img/individual.svg" alt="individual service" />
+        <h3 translate-key="service-ind-headline">Индивидуальный пошив</h3>
+        <p translate-key="service-ind-description" class="desctiption">
+          В нашем ателье вы можете изготовить крупный трикотаж (свитера, платья), а так же мелкие вещи такие как шапки, шарф по вашему дизайну.
+        </p>
+      </div>
+
+      <div class="service">
+        <img src="img/opt.svg" alt="opt service" />
+        <h3 translate-key="service-opt-headline">Отшив оптовых заказов</h3>
+        <p translate-key="service-opt-description" class="desctiption">
+          Так же наше ателье занимается оптовым производством вязанных частей униформ: школьные жилетки, шапки для военных и многое другое.
+        </p>
+      </div>
+
+      <div class="service">
+        <img src="img/repair.svg" alt="repair service" />
+        <h3 translate-key="service-repair-headline">Мелкий ремонт трикотажа</h3>
+        <p translate-key="service-repair-description" class="desctiption">
+          Ателье предоставляет широкий спектр услуг по ремонту вашей одежды: подгонка, штопка, укорачивание, изготовление вязаных деталей и другие.
+        </p>
+      </div>
+      <img class="tool-scissors" src="img/tool1.jpg" />
+    </section>
+
+    <section class="how container">
+      <h2 translate-key="headline-how">Как все будет происходить?</h2>
+      <ol class="process-description">
+        <li>
+          <div class="line"></div>
+          <h3 translate-key="how-call-headline">Звонок мастеру</h3>
+          <p translate-key="how-call-description" class="description">
+            Для назначения личной встречи с мастером ателье вам необходимо позвонить или написать в Вайбере, WhatsUp. Личная встреча необходима для обсуждения дизайна и снятия ваших мерок.
+          </p>
+        </li>
+
+        <li>
+          <div class="line hide"></div>
+          <h3 translate-key="how-met-headline">Личная встреча</h3>
+          <p translate-key="how-met-description" class="description hide">
+            При личной встрече мастер снимет с вас все необходимые мерки и выслушает все ваши пожелания относительно дизайна. Так же мы обсудим цену и сроки изготовления.
+          </p>
+        </li>
+
+        <li>
+          <div class="line hide"></div>
+          <h3 translate-key="how-try-headline">Пробная примерка</h3>
+          <p translate-key="how-try-description" class="description hide">
+            Дописать текст
+          </p>
+        </li>
+
+        <li>
+          <div class="line hide"></div>
+          <h3 translate-key="how-create-headline">Изготовление</h3>
+          <p translate-key="how-create-description" class="description hide">
+            После согласования всех аспектов издения, мастер приступит к выполнению заказа. Будут созданы выкройки по вашим индивидуальным меркам.
+          </p>
+        </li>
+
+        <li>
+          <div class="line hide"></div>
+          <h3 translate-key="how-order-headline">Получение заказа</h3>
+          <p translate-key="how-order-description" class="description hide">
+            Как только заказ будет готов мастер свяжется с вами для обсуждения времени забора заказа. В назначенное время вы сможете забрать ваш заказ в ателье.
+          </p>
+        </li>
+      </ol>
+      <img src="img/creating.jpg" alt="process of creating clothes" />
+      <img class="tool-pin" src="img/tool7.jpg" />
+    </section>
+
+    <section class="review container">
+      <h2><a translate-key="review-headline" name="review">Отзывы клиентов</a></h2>
+      <div class="slider">
+        <div class="slide bottom left">
+          <p translate-key="review-1-descriprion">
+            1 - Я небольшого роста поэтому мне очень сложно найти одежду подходящего мне размера. Подруга посоветовала мне обратиться в ателье. Я долго сомневалась, так как считала что одежда сделанная на заказ очень дорогая, но я была приятно удивлена. За адекватную
+            цену я получила очень качественный кардиган по моему личному дизайну и размеру.<br /> Обязательно вернусь еще и не один раз. Спасибо!
+          </p>
+          <div class="user-info container">
+            <img src="img/ava.png" alt="Елена Криворотова" />
+            <div class="main-info">
+              <span translate-key="review-1-name" class="name">Елена Криворотова</span>
+              <span class="date">22.05.2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide active">
+          <p translate-key="review-2-descriprion">
+            2 - Я небольшого роста поэтому мне очень сложно найти одежду подходящего мне размера. Подруга посоветовала мне обратиться в ателье. Я долго сомневалась, так как считала что одежда сделанная на заказ очень дорогая, но я была приятно удивлена. За адекватную
+            цену я получила очень качественный кардиган по моему личному дизайну и размеру.<br /> Обязательно вернусь еще и не один раз. Спасибо!
+          </p>
+          <div class="user-info container">
+            <img src="img/ava.png" alt="Елена Криворотова" />
+            <div class="main-info">
+              <span translate-key="review-2-name" class="name">Елена Криворотова</span>
+              <span class="date">22.05.2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide bottom right">
+          <p translate-key="review-3-descriprion">
+            3 - Я небольшого роста поэтому мне очень сложно найти одежду подходящего мне размера. Подруга посоветовала мне обратиться в ателье. Я долго сомневалась, так как считала что одежда сделанная на заказ очень дорогая, но я была приятно удивлена. За адекватную
+            цену я получила очень качественный кардиган по моему личному дизайну и размеру.<br /> Обязательно вернусь еще и не один раз. Спасибо!
+          </p>
+          <div class="user-info container">
+            <img src="img/ava.png" alt="Елена Криворотова" />
+            <div class="main-info">
+              <span translate-key="review-3-name" class="name">Елена Криворотова</span>
+              <span class="date">22.05.2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrow left"></div>
+        <div class="arrow right"></div>
+        <div class="counter">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions container">
+      <h2 translate-key="questions-headline">Остались вопросы?</h2>
+      <p translate-key="questions-description">
+        Если у вас есть вопросы или вы хотите договориться о личной встрече с мастером то не стесняйтесь позвонить нам или написать в одном из мессенджеров: WatsUp или Вайбер. Мы с удовольствием ответим на все ваши вопросы.
+      </p>
+      <div class="app">
+        <a class="viber" href="viber://contact?number=%2B3530838115900"></a>
+        <a class="whatsapp" href="https://web.whatsapp.com/send?phone=3530838115900"></a>
+      </div>
+      <img class="tool-buttons" src="img/tool4.jpg" />
+      <img class="tool-button" src="img/tool3.jpg" />
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <h2><a translate-key="contacts-headline" name="contacts">Наши контакты</a></h2>
+        <div class="info">
+          <img src="img/logo_black.svg" alt="logo" />
+          <div class="adress container">
+            <span translate-key="contacts-address">адрес:</span>
+            <span translate-key="contacts-address-data">г. Черкассы, XXXX улица, дом 12/2 офис 88</span>
+          </div>
+          <div class="phone container">
+            <span translate-key="contacts-phone"> телефон:</span>
+            <span translate-key="contacts-phone-data">+353 (083) 234-88-09<br />
+            Татьяна</span>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="map"></div>
+    </section>
+    <div class="go-to-top"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="contact-info">
+        <span translate-key="footer-address-data" class="adress">г.Черкассы, XXXX улица, дом 12/2 офис 88</span>
+      </div>
+      <img class="logo" src="img/main-logo.svg" alt="small logo" />
+      <div class="contact-info">
+        <span translate-key="footer-phone"> class="phone">тел: + 311 (032) 888-18-08</span>
+        <span translate-key="footer-name" class="name">Татьяна ХХХ</span>
+      </div>
+    </div>
+  </footer>
+  <!-- google-map -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+</body>
+
+</html>
