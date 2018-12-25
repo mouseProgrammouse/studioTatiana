@@ -450,6 +450,8 @@ li a
 {
     width: 73px;
     height: 73px;
+
+    border-radius: 80px;
 }
 
 .user-info .name
