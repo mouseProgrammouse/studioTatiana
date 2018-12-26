@@ -450,6 +450,7 @@ li a
 {
     width: 73px;
     height: 73px;
+    margin: 0 10px;
 
     border-radius: 80px;
 }
@@ -622,6 +623,11 @@ li a
     box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
 }
 
+a.phone
+{
+    color: #000;
+}
+
 .contacts .info span
 {
     display: inline-block;
@@ -657,6 +663,16 @@ footer
     background-color: #2a2422;
 }
 
+
+footer a
+{
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
 footer .container
 {
     justify-content: space-between;
@@ -674,7 +690,7 @@ footer .logo
 footer .contact-info
 {
     width: 35%;
-    max-width: 219px;
+    max-width: 188px;
 }
 
 .contact-info .name,

@@ -55,11 +55,11 @@ function getCookie(cname) {
 // Initialize and add the map
 function initMap() {
   // The location of studio
-  const studio = {lat: -25.344, lng: 131.036};
+  const studio = {lat: 49.4460794, lng: 32.0461428};
   const pin = 'img/map_pin.svg';
-  const popupContent = "<div class=\"container\"><h2><a name=\"contacts\">Наши контакты</a></h2><div class=\"info\"><img src=\"img/logo_black.svg\" alt=\"logo\"/><div class=\"adress container\"><span>адрес:</span><span>г. Черкассы, XXXX улица, дом 12/2 офис 88</span></div><div class=\"phone container\"><span> телефон:</span><span>+353 (083) 234-88-09</span></div></div></div>";
+  const popupContent = "<div class=\"container\"><h2><a name=\"contacts\">Наши контакты</a></h2><div class=\"info\"><img src=\"img/logo_black.svg\" alt=\"logo\"/><div class=\"adress container\"><span>адрес:</span><span>ул. Благовисна 144, г.Черкассы</span></div><div class=\"phone container\"><span><a class=\"phone\" href=\"tel:+380731332930\">+380 73 133-2930</a><br/>Татьяна</span></div></div></div>";
 
-  const map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: studio});
+  const map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: studio});
 
   // The marker, positioned at studio
   const marker = new google.maps.Marker({
