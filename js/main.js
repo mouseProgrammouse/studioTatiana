@@ -94,9 +94,14 @@ function getDefaultLang() {
 // dict - global// JSON with translated data
 // lang - selected language
 function translateContent(lang, dict) {
-    $('[translate-key]').each(function(){
-        $(this).text( dict[ lang ][$(this).attr('translate-key')]);
+    $("[translate-key]").each(function(){
+        $(this).text( dict[ lang ][$(this).attr("translate-key")]);
     });
+}
+
+// translate meta description for site
+function translateMetaDescription(lang, dict) {
+  console.log($("meta[name=description]").attr("content",dict[lang]["meta-description"]));
 }
 
 
@@ -113,6 +118,7 @@ $(function() {
   //set language
   var pageLangSelector = $("head");
   setLanguage(lang, pageLangSelector, dict);
+  translateMetaDescription(lang, dict);
   var languageSelector = $(".lang");
   var howSelector = $(".process-description");
   showSlides(slideIndex);
@@ -137,6 +143,7 @@ $(function() {
       lang = event.target.innerHTML;
       //translate page
       setLanguage(lang, pageLangSelector, dict);
+      translateMetaDescription(lang, dict);
       // set/change lang cookie (live for 30 days)
       setCookie("lang",lang,30);
     }
