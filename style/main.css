@@ -260,14 +260,13 @@ li a
 
     max-width: 910px;
     margin-top: 25px;
-    padding: 0 8%;
 }
 
 .services .tool-scissors
 {
     position: absolute;
     z-index: -1;
-    right: -70px;
+    right: -180px;
     bottom: -130px;
 
     max-width: 360px;
@@ -637,7 +636,7 @@ a.phone
 
 .contacts .info span:nth-child(2n)
 {
-    width: 70%;
+    width: 60%;
 }
 
 .contacts .info .phone
@@ -1069,4 +1068,9 @@ footer .contact-info
         width: 49%;
         max-width: 219px;
     }
+}
+
+#popup
+{
+    display: none;
 }
