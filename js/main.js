@@ -1,6 +1,6 @@
 var slideIndex = 1;
 // creating a Cookie object
-var myCookie = new Cookie();
+var myCookie = new Cookie("lang");
 var lang = getDefaultLang(myCookie); // get language by default
 // info window for map
 var contentString = '<div class="container">' +
@@ -10,6 +10,7 @@ var contentString = '<div class="container">' +
     '<div class="phone container"><span><a class="phone" href="tel:+380731332930">+380 73 133-2930</a><br/>Татьяна</span></div>' +
     '</div>' +
     '</div>';
+
 
 // next slide
 function plusSlides(n) {
@@ -47,22 +48,24 @@ function showSlides(n) {
 // Initialize and add the map
 function initMap(contentString) {
     // The location of studio
-    var studio = {
+    var studioCoordinate = {
         lat: 49.442916,
         lng: 32.049886
     };
-    var pin = 'img/map_pin.svg';
+
+    // icon for map's pin
+    var pinIcon = 'img/map_pin.svg';
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,
-        center: studio
+        center: studioCoordinate
     });
 
     // The marker, positioned at studio
     var marker = new google.maps.Marker({
-        position: studio,
+        position: studioCoordinate,
         map: map,
-        icon: pin
+        icon: pinIcon
     });
 
     // add some usefull info about studio
@@ -80,7 +83,7 @@ function initMap(contentString) {
 // get language by default
 function getDefaultLang(cookie) {
     // check cookie
-    var lang = cookie.getCookie("lang");
+    var lang = cookie.getCookie();
     return (lang === "") ? "RU" : lang; // RU is lang by default
 }
 
@@ -155,7 +158,7 @@ $(function () {
             setLanguage(lang, pageLangSelector, dict);
             translateMetaDescription(lang, dict);
             // set/change lang cookie (live for 30 days)
-            myCookie.setCookie("lang", lang, 30);
+            myCookie.setCookie(lang, 30);
         }
     });
 

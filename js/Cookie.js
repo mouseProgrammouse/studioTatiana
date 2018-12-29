@@ -2,7 +2,9 @@
  * This class uses for manipulating with cookie
  */
 // Constructor function
-function Cookie() {
+function Cookie(cname) {
+    // cookie name
+    this.name = cname;
 
     /**
      * Method that stores the name and value cookie
@@ -11,14 +13,14 @@ function Cookie() {
      * cvalue - value of that cookie
      * exdays - the number of days until the cookie should expire
      */
-    this.setCookie = function (cname, cvalue, exdays) {
+    this.setCookie = function (cvalue, exdays) {
         // uses a Date object for manipulating with date
         var d = new Date();
         // calculated time in milliseconds
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
         // set cookie name, cookie value and expire days
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        document.cookie = this.name + "=" + cvalue + ";" + expires + ";path=/";
     };
 
     /**
@@ -27,8 +29,8 @@ function Cookie() {
      *
      * cname - name of the cookie
      */
-    this.getCookie = function (cname) {
-        var name = cname + "=";
+    this.getCookie = function () {
+        var name = this.name + "=";
         // decodes a URI component
         var decodedCookie = decodeURIComponent(document.cookie);
         // split a string into an array of substrings,
