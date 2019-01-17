@@ -58,14 +58,6 @@ var slideIndex = 1;
 // creating a Cookie object
 var myCookie = new Cookie("lang");
 var lang = getDefaultLang(myCookie); // get language by default
-// info window for map
-var contentString = '<div class="container">' +
-    '<h2><a name="contacts">Наши контакты</a></h2>' +
-    '<div class="info"><img src="img/logo_black.svg" alt="logo" />' +
-    '<div class="adress container"><span>адрес:</span><span>ул. Благовисна 144, г.Черкассы</span></div>' +
-    '<div class="phone container"><span><a class="phone" href="tel:+380731332930">+380 73 133-2930</a><br/>Татьяна</span></div>' +
-    '</div>' +
-    '</div>';
 
 
 // next slide
@@ -102,12 +94,18 @@ function showSlides(n) {
 }
 
 // Initialize and add the map
-function initMap(contentString) {
+function initMap() {
     // The location of studio
     var studioCoordinate = {
         lat: 49.442916,
         lng: 32.049886
     };
+
+    // info window for map
+    var contentString = '<div>' +
+        '<p class="adress">адрес: ул. Благовисна 144, г.Черкассы</p>' +
+        '<p class="phone">телефон: +380 73 133-2930 Татьяна</p>' +
+        '</div>';
 
     // icon for map's pin
     var pinIcon = 'img/map_pin.svg';
@@ -117,16 +115,16 @@ function initMap(contentString) {
         center: studioCoordinate
     });
 
+    // add some usefull info about studio
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
     // The marker, positioned at studio
     var marker = new google.maps.Marker({
         position: studioCoordinate,
         map: map,
         icon: pinIcon
-    });
-
-    // add some usefull info about studio
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
     });
 
     // add eventlistener to pin
@@ -163,21 +161,36 @@ function translateMetaDescription(lang, dict) {
         .attr("content", dict[lang]["meta-description"]);
 }
 
+//set language on page
+function setLang(lang, pageLangSelector) {
+    pageLangSelector.each(function () {
+        if (($(this)[0].innerHTML) === lang) {
+            $(this)
+                .addClass("checked");
+        }
+    })
+}
+
 
 // set language for website
-function setLanguage(lang, pageLangSelector, dict) {
+function setLanguage(lang, pageLangSelector, metaLangSelector, dict) {
     // change lan of page
-    pageLangSelector.attr("lang", lang);
+    $(metaLangSelector)
+        .attr("lang", lang);
+    // change class="checked"
+    setLang(lang, pageLangSelector);
     // change lang of content
     translateContent(lang, dict);
+    // translate meta description
+    translateMetaDescription(lang, dict);
 }
 
 // document loaded
 $(function () {
     // set language
-    var pageLangSelector = $("head");
-    setLanguage(lang, pageLangSelector, dict);
-    translateMetaDescription(lang, dict);
+    var metaLangSelector = $("head");
+    var pageLangSelector = $(".lang a");
+    setLanguage(lang, pageLangSelector, metaLangSelector, dict);
     var languageSelector = $(".lang");
     var howSelector = $(".process-description");
     showSlides(slideIndex);
@@ -211,7 +224,7 @@ $(function () {
                 .addClass("checked");
             lang = event.target.innerHTML;
             // translate page
-            setLanguage(lang, pageLangSelector, dict);
+            setLanguage(lang, pageLangSelector, metaLangSelector, dict);
             translateMetaDescription(lang, dict);
             // set/change lang cookie (live for 30 days)
             myCookie.setCookie(lang, 30);

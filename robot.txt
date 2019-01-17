@@ -10,4 +10,4 @@ User-agent: Yandex
 Allow: /images/
 Disallow: /js/
 Disallow: /css/
-Host: TODO:studio.ru
+Host: trikotag.ck.ua

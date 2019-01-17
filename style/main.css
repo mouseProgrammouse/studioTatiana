@@ -14,6 +14,23 @@ body
     padding: 0 0;
 }
 
+a
+{
+    color: #252525;
+}
+
+a:hover
+{
+    text-decoration: none;
+
+    color: #252525;
+}
+
+.lang a:hover
+{
+    color: #fff;
+}
+
 h1,
 h2,
 h3
@@ -172,6 +189,8 @@ nav ul li:hover
     font-weight: 700;
 
     padding: 0 0 12px 0;
+
+    color: #fff;
 }
 
 nav ul li:hover::before
@@ -179,10 +198,17 @@ nav ul li:hover::before
     content: ' – ';
 }
 
-li a
+li a,
+li a:visited,
+li a:active
 {
     text-decoration: none;
 
+    color: #fff;
+}
+
+li a:hover
+{
     color: #fff;
 }
 
@@ -194,6 +220,13 @@ li a
 .usefull-info li a:last-child
 {
     padding: 0 1px;
+}
+
+.usefull-info li a:hover
+{
+    text-decoration: underline;
+
+    color: #fff;
 }
 
 .about-company
@@ -476,6 +509,8 @@ li a
 {
     align-items: center;
     justify-content: center;
+
+    width: 100%;
 }
 
 .slide.bottom,
@@ -611,11 +646,12 @@ li a
     line-height: 20px;
 
     position: absolute;
+    z-index: 1;
     top: 180px;
     right: 8%;
 
     width: 324px;
-    padding: 20px 55px 45px 55px;
+    padding: 20px 50px 45px 50px;
 
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
@@ -624,6 +660,11 @@ li a
 a.phone
 {
     color: #000;
+}
+
+.info .container
+{
+    width: 100%;
 }
 
 .contacts .info span
@@ -641,6 +682,22 @@ a.phone
 .contacts .info .phone
 {
     margin: 18px 0 0 0;
+}
+
+.contacts .info a,
+.contacts .info a:visited,
+.contacts .info a:active
+{
+    text-decoration: none;
+
+    color: #252525;
+}
+
+.contacts .info a:hover
+{
+    text-decoration: underline;
+
+    color: #252525;
 }
 
 .contacts img
@@ -662,11 +719,21 @@ footer
 }
 
 
-footer a
+footer a,
+footer a:visited,
+footer a:active
 {
     display: inline-block;
 
     text-decoration: none;
+
+    color: #fff;
+}
+
+
+footer a:hover
+{
+    text-decoration: underline;
 
     color: #fff;
 }
@@ -699,8 +766,6 @@ footer .contact-info
 
 #map
 {
-    z-index: -1;
-
     width: 100%;
     height: 350px;
 }
@@ -764,6 +829,13 @@ footer .contact-info
 .app .whatsapp
 {
     background-image: url('../img/what.svg');
+}
+
+a:visited
+{
+    text-decoration: none;
+
+    color: #fff;
 }
 
 
@@ -1082,7 +1154,7 @@ footer .contact-info
     {
         order: 1;
 
-        width: 49%;
-        max-width: 219px;
+        width: 50%;
+        max-width: 148px;
     }
 }
