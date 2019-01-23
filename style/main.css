@@ -754,6 +754,8 @@ footer .logo
 
 footer .contact-info
 {
+    font-style: normal;
+
     width: 35%;
     max-width: 148px;
 }
