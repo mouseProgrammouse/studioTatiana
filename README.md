@@ -8,7 +8,7 @@ It's a landing page for the small knitted studio in Ukraine.
 * [Setup](#setup)
 
 ## Design
-  **Brief:** _Create a landing page for the small knitted studio in Ukraine. The studio specializes in producing clothes from wool yarn like sweaters, cardigans, etc. Main customers are women 35+._
+  **Brief:** _Create a landing page for the small knitted studio in Ukraine. The studio specializes in producing clothes from wool yarn such as sweaters, cardigans, etc. Main customers are women aged 35 and above._
   
   **Multilingual:** The content of the site is translated into two languages (Russian and Ukrainian). Languages switching is stored in `cookies`.
   
