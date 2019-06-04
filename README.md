@@ -23,7 +23,7 @@ It's a landing page for the small knitted studio in Ukraine.
   **Mokup:**
   For the design prototype I used Figma. See full [project](https://www.figma.com/file/FRTkY43ZibhqbDXQQYd0rEqI/Untitled?node-id=0%3A1) at <img src="https://raw.githubusercontent.com/mouseProgrammouse/readme/master/icons/figma-logo.png" width="28"/>
   
-  [Project](https://www.behance.net/gallery/81111745/Landing-page-for-the-knitted-studio) on  <img src="https://raw.githubusercontent.com/mouseProgrammouse/readme/master/icons/behance-logo.png" width="28"/>
+  [Project](https://www.behance.net/gallery/81159923/Landing-page-for-a-knitting-studio) on  <img src="https://raw.githubusercontent.com/mouseProgrammouse/readme/master/icons/behance-logo.png" width="28"/>
 
 ## Description
  <img src="https://raw.githubusercontent.com/mouseProgrammouse/readme/master/icons/normalize.png" width="28"/> **Normalize.css** is used for the better cross-browser consistency in the default styling of HTML elements.
