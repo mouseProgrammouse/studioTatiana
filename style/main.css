@@ -37,6 +37,8 @@ h3
 {
     font-family: 'Playfair Display', Times, serif;
     font-weight: bold;
+    font-style: normal;
+    line-height: normal;
 
     color: #252525;
 }
@@ -270,7 +272,7 @@ li a:hover
 
 .about-company h2
 {
-    margin: 50px 0 -5px 0;
+    margin: 50px 0 14px 0;
 }
 
 .about-company p
@@ -345,7 +347,7 @@ li a:hover
 .how h2
 {
     width: 100%;
-    margin: 95px 0 0 0;
+    margin: 95px 0 14px 0;
 
     text-align: left;
 }
@@ -585,7 +587,7 @@ li a:hover
 .questions h2
 {
     width: 100%;
-    margin: 69px 0 0 0;
+    margin: 69px 0 10px 0;
 
     text-align: center;
 }
@@ -629,7 +631,7 @@ li a:hover
 .contacts h2
 {
     width: 100%;
-    margin: 50px 0 0 0;
+    margin: 50px 0 14px 0;
 
     text-align: center;
 }
