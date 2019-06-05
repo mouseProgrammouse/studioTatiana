@@ -17,7 +17,7 @@ It's a landing page for the small knitted studio in Ukraine.
   **Design Inspiration:**
   The main inspiration for this site came from studio works and sewing tools.
   
-  <p align="center"><img src="https://raw.githubusercontent.com/mouseProgrammouse/studioTatiana/master/readme/Desktop.jpg" width="480"/></p>
+  <p align="center"><img src="https://raw.githubusercontent.com/mouseProgrammouse/studioTatiana/master/readme/Desktop.png" width="480"/></p>
   
   
   **Mokup:**
