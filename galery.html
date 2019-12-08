@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', '');
+
+  </script>
+  <meta charset="utf-8" />
+  <title translate-key="title"></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" rel="stylesheet" />
+  <link href="style/main.min.css" rel="stylesheet" />
+  <script src="lang/dict.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</head>
+
+<body class="main">
+        <header class="header">
+                <div class="container">
+                  <nav>
+                    <ul>
+                      <li>
+                        <a translate-key="main-menu-1" href="/"></a>
+                      </li>
+                      <li>
+                        <a class="active" translate-key="main-menu-2" href="/galery.html"></a>
+                      </li>
+                      <li>
+                        <a translate-key="main-menu-3" href="#contacts"></a>
+                      </li>
+                    </ul>
+                  </nav>
+            
+                  <div class="main-info">
+                    <img src="img/main-logo.svg" alt="логотип ателье 'Татьяна'" width="255px" />
+                    <h1 translate-key="main-headline"></h1>
+                    <p translate-key="main-description" class="teaser"></p>
+                    <button id="call-button" translate-key="call-to-action" type="button"></button>
+                  </div>
+            
+                  <aside class="usefull-info">
+                    <ul>
+                      <li>
+                        <img src="img/pin.svg" alt="location icon" />
+                        <span translate-key="city"></span>
+                      </li>
+                      <li class="lang">
+                        <a href="#">RU</a>|
+                        <a href="#">UA</a>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+              </header>
+
+              <section class="galery">
+                <div id="bunch01" class="bunch-main">
+                  <div class="small-item">
+                    <h2 translate-key="galery-header"></h2>
+                    <p translate-key="galery-description"></p>
+                  </div>
+                  <div class="small-item"><img src="img/g001.jpg"/></div>
+                  <div class="medium-item"><img src="img/g002.jpg"/></div>
+                  <div class="medium-item"><img src="img/g003.jpg"/></div>
+                  <div class="big-item"><img src="img/g004.jpg"/></div>
+                  <div class="medium-item"><img src="img/g005.jpg"/></div>
+                  <div class="small-item"><img src="img/g006.jpg"/></div>
+                  <div class="small-item"><img src="img/g007.jpg"/></div>
+                </div>
+                <button translate-key="load-more" type="button"></button>
+              </section>
+
+              <section class="contacts">
+                    <div class="container">
+                      <h2 translate-key="contacts-headline"></h2>
+                      <div class="info">
+                        <img src="img/logo_black.svg" alt="логотип ателье" width="38px" />
+                        <div class="adress container">
+                          <span translate-key="contacts-address"></span>
+                          <span translate-key="contacts-address-data"></span>
+                        </div>
+                        <div class="phone container">
+                          <span translate-key="contacts-phone"></span>
+                          <span><a translate-key="phone" class="phone" href="tel:+380731332930"></a>
+                            <span translate-key="name"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="map" class="map"></div>
+                  </section>
+                  <div class="go-to-top"></div>
+                </div>
+
+              <footer>
+                    <div class="container">
+                      <address class="contact-info">
+                        <span translate-key="footer-address-data" class="adress"></span>
+                      </address>
+                      <img class="logo" src="img/main-logo.svg" alt="логотип ателье" width="38px" />
+                      <div class="contact-info">
+                        <span class="phone">тел: <a href="tel:+380731332930" translate-key="phone"></a></span>
+                        <span translate-key="name" class="name"></span>
+                      </div>
+                    </div>
+                  </footer>
+                  <!-- google-map -->
+                  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
+</body>
+</html>
